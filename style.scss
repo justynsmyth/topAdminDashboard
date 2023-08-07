@@ -1,0 +1,50 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "s h h"
+    "s p a"
+    "s p t"
+    "f f f";
+}
+
+.container, .container > * {
+    border:initial;
+    border: 2px solid red; 
+}
+
+.container div {
+    padding: 15px;
+}
+
+
+// .container > * {
+//     height: 100px;
+//     width: 100px;
+// }
+.sidebar {
+    grid-area: s;
+}
+
+.header {
+    grid-area: h;
+}
+
+.project {
+    grid-area: p;
+}
+
+.announcements {
+    grid-area: a;
+}
+
+.trending {
+    grid-area: t;
+}
+
+.footer {
+    grid-area: f;
+}
+
